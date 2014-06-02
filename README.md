@@ -33,7 +33,13 @@ To discover what can be done with Markdown in *Markdown Here*, check out the [Ma
 ### Chrome
 
 #### Chrome Web Store
+```python
+def list_customers(request):
+    return render_to_response('list_customers.html', {
+        'customers': Customer.objects.order_by('name'),
+    }, RequestContext(request))
 
+```
 Go to the [Chrome Web Store page for *Markdown Here*](https://chrome.google.com/webstore/detail/elifhakcjgalahccnjkneoccemfahfoa) and install normally.
 
 After installing, make sure to reload your webmail or restart Chrome!
